@@ -1,139 +1,144 @@
 var equipo1={
-    nombre:"teclados",
-    codigo: "1223",
-    cantidad:4,
+        nombre:"teclados",
+        codigo: "1223",
+        cantidad:4,
 
-}
-var equipo2={
-    nombre: "mouse",
-    codigo: "0912",
-    cantidad:4,
+    }
+    var equipo2={
+        nombre: "mouse",
+        codigo: "0912",
+        cantidad:4,
 
-}
-var equipo3={
-    nombre: "audifonos",
-    codigo: "6012",
-    cantidad: 4,
-}
-var equipo4={
-    nombre: "laptop",
-    codigo: "3912",
-    cantidad:4,
+    }
+    var equipo3={
+        nombre: "audifonos",
+        codigo: "6012",
+        cantidad: 4,
+    }
+    var equipo4={
+        nombre: "laptop",
+        codigo: "3912",
+        cantidad:4,
 
-}
-console.log("contamos con los siguientes equipos: ");
-console.log(equipo1);
-console.log(equipo2);
-console.log(equipo3);
-console.log(equipo4);
-alert("los equipos con los que contamos aparecen en la consola");
+    }
+
+ console.log("contamos con los siguientes equipos: ");
+ console.log(equipo1);
+ console.log(equipo2);
+ console.log(equipo3);
+ console.log(equipo4);
+ alert("los equipos con los que contamos aparecen en la consola");
 
 
 alert("para poder prestarte un equipo nececitas no tener algun prestamo activo")
 var prestamo = prompt("tienes algun prestamo activo (si, no)")
+var tecl = 4;
+var mous = 4;
+var audif = 4;
+var lap = 4;
 var actualizacion= "";
 
 switch(prestamo){
-case "no":
-    var nombre= prompt("escribe tu nombre para que se te pueda prestar el equipo") 
-    var prestamo1= prompt("escribe el nombre del equipo que requieres ");
-    var numeroDeEquipos= parseInt(prompt("cuantos equipos nececitas"));
+    case "no":
+        var nombre= prompt("escribe tu nombre para que se te pueda prestar el equipo") 
+        var prestamo1= prompt("escribe el nombre del equipo que requieres ");
+        var numeroDeEquipos= parseInt(prompt("cuantos equipos nececitas"));
 
-     switch(prestamo1){
-           case "teclado":
-             if(numeroDeEquipos <= 4){
-                alert("cuida el teclado")   
-                actualizacion= 4 -  numeroDeEquipos;                   
-             }else{;
-                alert("no tenemos equipos suficientes");                                  
-            };
-            break;
-            case "mouse":
-                if(numeroDeEquipos <= 4){
-                    alert("cuida el mouse");   
-                    actualizacion = 4 - numeroDeEquipos; 
-                }else{;
-                alert("no tenemos equipos suficientes")                   
-            };
-            break;
-            case "audifonos":
-                if(numeroDeEquipos <= 4){
-                    alert("cuida los audifonos");
-                    actualizacion =  4 - numeroDeEquipos;
-                }else{;
-                alert("no tenemos equipos suficientes");
-            };
-            break;
-            case "laptop":
-                if(numeroDeEquipos <= 4){
-                    alert("cuida el equipo");
-                    actualizacion= 4 - numeroDeEquipos;
-                }else{;
-                alert("no hay equipos suficientes");
-            };
-            break;
-            
-        };
-        var equp2 = prompt("si quieres pedir prestado un equipo escribe aceptar y si no lo quieres escribe cancelar");
-        switch(equp2){
-            case "aceptar":
-            var prestamo = prompt("tienes algun prestamo activo (si, no)")                    
-                switch(prestamo){
-                    case "no":
-                        var nombre2= prompt("escribe tu nombre y tu matricula para que se te pueda prestar el equipo");
-                        var prestamo2= prompt("escribe el nombre del equipo que requieres ");
-                        var numeroDeEquipos2= parseInt(prompt("cuantos equipos nececitas"));
-                        switch(prestamo1){
-                            case "teclado":
-                                if(numeroDeEquipos <= 4){
-                                    alert("cuida el teclado")   
-                                    actualizacion= 4 -  numeroDeEquipos;                   
-                            }else{;
-                                alert("no tenemos equipos suficientes");           
-                                actualizacion= 4 - numeroDeEquipos;    
-                            };
-                            break;
-                            case "mouse":
-                                if(numeroDeEquipos <= 4){
-                                    alert("cuida el mouse");   
-                                actualizacion = 4 - numeroDeEquipos; 
-                            }else{;
-                                alert("no tenemos equipos suficientes")                   
-                            };
-                             break;
-                            case "audifonos":
-                                if(numeroDeEquipos <= 4){
-                                    alert("tu prestamo se autorizo, cuida los audifonos");
-                                    actualizacion =  4 - numeroDeEquipos;
-                            }else{;
-                                alert("no tenemos equipos suficientes");
-                            };
-                            break;
-                            case "laptop":
-                                if(numeroDeEquipos <= 4){
-                                    alert("cuida el equipo");
-                                    actualizacion= 4 - numeroDeEquipos;
-                            }else{;
-                                alert("no hay equipos suficientes");
-                            };
-                            
-
-                    break;
-                    case "si":
-                        alert("no podemos prestarte un equipo ya que tienes un prestamo activo");
+         switch(prestamo1){
+               case "teclado":
+                 if(numeroDeEquipos <= 4){
+                    alert("cuida el teclado")   
+                    actualizacion= 4 -  numeroDeEquipos;                   
+                 }else{;
+                    alert("no tenemos equipos suficientes");                                  
                 };
-            break;
-            case "cancelar":
-                alert("ten un buen dia xd")
-        }
+                break;
+                case "mouse":
+                    if(numeroDeEquipos <= 4){
+                        alert("cuida el mouse");   
+                        actualizacion = 4 - numeroDeEquipos; 
+                    }else{;
+                    alert("no tenemos equipos suficientes")                   
+                };
+                break;
+                case "audifonos":
+                    if(numeroDeEquipos <= 4){
+                        alert("cuida los audifonos");
+                        actualizacion =  4 - numeroDeEquipos;
+                    }else{;
+                    alert("no tenemos equipos suficientes");
+                };
+                break;
+                case "laptop":
+                    if(numeroDeEquipos <= 4){
+                        alert("cuida el equipo");
+                        actualizacion= 4 - numeroDeEquipos;
+                    }else{;
+                    alert("no hay equipos suficientes");
+                };
+                break;                            
+            };
 
-     
-          
-     
+            var equp2 = prompt("si quieres pedir prestado un equipo escribe aceptar y si no lo quieres escribe cancelar");
+            switch(equp2){
+                case "aceptar":
+                    var prestamo = prompt("tienes algun prestamo activo (si, no)")                    
+                    switch(prestamo){
+                        case "no":
+                            var nombre2= prompt("escribe tu nombre y tu matricula para que se te pueda prestar el equipo");
+                            var prestamo2= prompt("escribe el nombre del equipo que requieres ");
+                            var numeroDeEquipos2= parseInt(prompt("cuantos equipos nececitas"));
+                            switch(prestamo1){
+                                case "teclado":
+                                    if(numeroDeEquipos <= 4){
+                                        alert("se autorizo tu prestamo, cuida el teclado")   
+                                        actualizacion= 4 -  numeroDeEquipos;                   
+                                }else{;
+                                    alert("no tenemos equipos suficientes");           
+                                    actualizacion= 4 - numeroDeEquipos;    
+                                };
+                                break;
+                                case "mouse":
+                                    if(numeroDeEquipos <= 4){
+                                        alert("se autorizo tu prestamo, cuida el mouse");   
+                                    actualizacion = 4 - numeroDeEquipos; 
+                                }else{;
+                                    alert("no tenemos equipos suficientes")                   
+                                };
+                                 break;
+                                case "audifonos":
+                                    if(numeroDeEquipos <= 4){
+                                        alert("tu prestamo se autorizo, cuida los audifonos");
+                                        actualizacion =  4 - numeroDeEquipos;
+                                }else{;
+                                    alert("no tenemos equipos suficientes");
+                                };
+                                break;
+                                case "laptop":
+                                    if(numeroDeEquipos <= 4){
+                                        alert("se autorizo tu prestamo, cuida el equipo");
+                                        actualizacion= 4 - numeroDeEquipos;
+                                }else{;
+                                    alert("no hay equipos suficientes");
+                                };
+                                
 
-break;
-case "si":
-    alert("no podemos prestarte un equipo ya que tienes un prestamo activo");
+                        break;
+                        case "si":
+                            alert("no podemos prestarte un equipo ya que tienes un prestamo activo");
+                    };
+                break;
+                case "cancelar":
+                    alert("ten un buen dia xd")
+             
+                };
+            };
+
+         
+              
+         
+
+    break;
+    case "si":
+        alert("no podemos prestarte un equipo ya que tienes un prestamo activo");
 };
-
-    
