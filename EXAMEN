@@ -1,49 +1,95 @@
-var teclado={
+    var t = 3;
+    var m = 3;
+    var l = 3;
+
+    var teclado={
     nombre: "teclados",
     codigo: 123,
-    cantidad:3,
-};
-var mouse={
+    cantidad: t,
+    };
+    var mouse={
     nombre: "mouse",
     codigo: 129,
-    cantidad:3,
+    cantidad: m,
     };
-var laptop={
+    var laptop={
     nombre: "laptop",
     codigo: 321,        
-    cantidad:3,
-};
-alert("los equipos de computo se muestran en la consola")
-console.log(teclado,mouse,laptop);
-var i = 3;
-while(i>0){
-    var regresar;
-    i = prompt("ingresa la operacion que quieres realizar" + "\n\n1.- hacer prestamo" + "\n\n2.- salir");
-    switch(i){
+    cantidad: l,
+    };
+
+    alert("los equipos de computo se muestran en la consola")
+    console.log(teclado,mouse,laptop);
+    var i = 3;
+    while(i>=0){
+    var a;
+    a = prompt("ingresa la operacion que quieres realizar" + "\n\n1.- hacer prestamo" + "\n\n2.- Mostrar todos los prestamos " + "Mostrar los datos de un usuario" + "\n\n3.- Informacion de los equipos prestados y almacenados" + "\n\n4.- salir" );
+    switch(a){
         case "1":
             var prestamo= prompt("tienes algun prestamo activo si o no");
             switch(prestamo){
                 case "si":
                     alert("no te podemoa brindar un prestamo ya que tienes un prestamo activo");
-                    break;
+                break;
                 case "no":
                     var datos = prompt("ingresa tu nombre");
-                    var equipo=prompt("nombre del equipo que requieres : " + "\n\nteclados " + "\n\nmouse " + "\n\nlaptop ");
-                    var cantidad=parseInt(prompt("cantidad de esquipos que requieres"));
-                    break;
-                    
-            }
+                    actualizacionDeEquipos();
+                break;
+                }
             break;
         case "2":
-        case "salir":
+            var s
+        break;
+        case "3":
+
+        break;
+        case "4":
             alert("bye");
             i = 0;
-            break;
+        break;
+        }
+        i--;      
     }
+   function actualizacionDeEquipos() {
+            var equipo=prompt("escribe el nombre del equipo que requieres : " + "\n\n1.- teclado " + "\n\n2.- mouse " + "\n\n3.- laptop ");
+            switch (equipo) {
+                case "teclado":
+                    var cantidad=parseInt(prompt("cantidad de esquipos que requieres "));
+                    if(cantidad > t){
+                        alert("No contamos con suficiente equipos, vuelve a llenar los datos")
+                    }else{
+                        t = t - cantidad;
+                    }
+                   
+                    break;
+                case "mause":
+                    var cantidad=parseInt(prompt("cantidad de esquipos que requieres "));
+                    if(cantidad > t){
+                        alert("No contamos con suficiente equipos, vuelve a llenar los datos")
+                    }else{
+                        m = m - cantidad;
+                    }
+                    break;
+                case "laptop":
+                    var cantidad=parseInt(prompt("cantidad de esquipos que requieres "));
+                    if(cantidad > t){
+                        alert("No contamos con suficiente equipos, vuelve a llenar los datos")
+                        return cantidad;
+                    }else{
+                        l = l - cantidad;
+                    }
+                    break;
+            }
 
-i--;
-}
-
+    }
+    function prestamos() {
+        
+    }
+    function guradarDatos() {
+        var prestamoDeEquipos = [];
+        let siguentepocision = equipo.length;
+        equipo= [siguentePocision = equipo]
+    }
 
 
 
