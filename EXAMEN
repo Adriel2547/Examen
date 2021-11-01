@@ -88,20 +88,11 @@
 
     }
     
-        
     function guradarDatos() {
         var prestamoDeEquipos = [];
         let siguentepocision = equipo.length;
         equipo= [siguentePocision = equipo]
     }
-
-
-
-
-
-
-
-
 
 
 
