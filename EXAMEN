@@ -23,7 +23,7 @@
     var i = 3;
     while(i>=0){
     var a;
-    a = prompt("ingresa la operacion que quieres realizar" + "\n\n1.- hacer prestamo" + "\n\n2.- Mostrar todos los prestamos " + "Mostrar los datos de un usuario" + "\n\n3.- Informacion de los equipos prestados y almacenados" + "\n\n4.- salir" );
+    a = prompt("ingresa la operacion que quieres realizar" + "\n\n1.- hacer prestamo" + "\n\n2.- Mostrar todos los prestamos " + "\n\n3.-Mostrar los datos de un usuario" + "\n\n4.- Informacion de los equipos prestados y almacenados" + "\n\n5.- salir" );
     switch(a){
         case "1":
             var prestamo= prompt("tienes algun prestamo activo si o no");
@@ -38,12 +38,17 @@
                 }
             break;
         case "2":
-            var s
+            
         break;
         case "3":
-
+    
         break;
         case "4":
+            alert("nombre: " + teclado.nombre + " codigo: " + teclado.codigo + " cantidad: " + t + 
+            "\n\n nombre: " + mouse.nombre + " codigo: " + mouse.codigo + " cantidad: " + m +
+            "\n\n nombre: " + laptop.nombre + " codigo: " + laptop.codigo + " cantida: " + l);
+        break;
+        case "5":
             alert("bye");
             i = 0;
         break;
@@ -62,7 +67,7 @@
                     }
                    
                     break;
-                case "mause":
+                case "mouse":
                     var cantidad=parseInt(prompt("cantidad de esquipos que requieres "));
                     if(cantidad > t){
                         alert("No contamos con suficiente equipos, vuelve a llenar los datos")
@@ -82,9 +87,8 @@
             }
 
     }
-    function prestamos() {
+    
         
-    }
     function guradarDatos() {
         var prestamoDeEquipos = [];
         let siguentepocision = equipo.length;
